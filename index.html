@@ -14,7 +14,7 @@
     </heading>
     <section><!--Navbar-->
         <nav class="nav-bar">
-            <ul><!--Inliine event handling-->
+            <ul>
               <li><a href = "index.html" target = "_blank">Home</a></li>
               <li><a href = "about.html" target = "_blank">About</a></li>
               <li><a href = "admin.html" target = "_blank">Admin</a></li>
@@ -23,6 +23,36 @@
               <li><a href = "help.html" target = "_blank">Help</a></li>
             </ul>
           </nav>
+        <main  class = "member">
+            <p id="signupPara">   New Members sign up   </p>
+            <label for = "role" id="roleMember">Select role : </label>
+            <select name = "role" id = "role">
+                <option>Admin</option>
+                <option>Employee</option>
+            </select> <br><br>
+            <form>
+                <label for="Email">Email Address (valid) : </label> <!--email-->
+                <input type = "text" id = "EmailOld" placeholder = "Email" email = "EmailOld"><br><br><br>
+                <label for="Password">Password (valid) : </label> <!--password-->
+                <input type="password" id="password" placeholder="Password">
+                <span toggle="#password" class="show-password">Show</span>
+            </form><br><br> 
+            <button>Submit</button>
+            <p id="loginPara">Experienced Members login</p>
+            <form>
+                <label for="nameNew">Name (as per Aadhar Card) : </label>
+                <input type = "text" id = "nameNew" placeholder = "e.g John Doe" name = "nameNew"><br><br> <!--name-->
+                <label for="EmailNew">Email Address (valid) : </label>
+                <input type = "text" id = "EmailNew" placeholder = "e.g abc@gmail.com" EmailNew = "EmailNew"><br><br><!--email-->
+                <label for="passwordNew">Create Password : </label>
+                <input type = "password" id = "passwordNew" placeholder = "e.g abc@45#" passwordNew = "passwordNew"><br><br>
+                <label for="Aadhar">Enter Aadhar Number : </label>
+                <input type = "number" id = "Aadhar" placeholder = "e.g 5847 7788 ****" Aadhar = "Aadhar"><br><br>
+                <label for="Password">Enter Mobile Number :</label>
+                <input type = "number" id = "Mobile" placeholder = "e.g 9997778***" Mobile = "Mobile"><br><br>
+            </form>
+            <button>Submit</button>
+        </main>
     </section>
     <script src = "script.js"></script>
 </body>

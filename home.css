@@ -34,4 +34,30 @@ body{
   .nav-bar a:hover {
     background-color: #555;
   }
-  
+#modeToggle{
+  border: 2px solid black;
+  border-radius: 90%;
+}
+.member{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#signupPara{
+  border: 2px solid black;
+}
+#roleMember{
+  border: 2px solid black;
+}
+#loginPara{
+  border: 2px solid black;
+}
+.show-password {
+  cursor: pointer;
+  margin-left: 10px;
+}

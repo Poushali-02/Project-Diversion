@@ -15,13 +15,19 @@ const mode = () =>{
         currMode = "dark";//changing value of currMode to dark
         toggle.innerText = "Light";//changing display
         body.style.backgroundColor = "black";
-        document.querySelector("heading").style.color = "beige";//changing mode to dark
+        toggle.style.backgroundColor = "beige";
+        toggle.style.color = "black";
+        document.querySelector("body").style.color = "beige";
+        document.querySelector("body").style.borderColor = "black";//changing mode to dark
         
     } else{
         currMode = "light";//changing value of currMode to light
         toggle.innerText = "Dark";//changing display
         body.style.backgroundColor = "beige";
-        document.querySelector("heading").style.color = "black"; //changing mode to light
+        toggle.style.backgroundColor = "black";
+        toggle.style.color = "beige";
+        document.querySelector("body").style.color = "black";
+        document.querySelector("body").style.borderColor = "beige"; //changing mode to light
     }
 }
 toggle.addEventListener("click", mode);
