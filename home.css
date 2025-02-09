@@ -1,13 +1,22 @@
-body{
-    background-color: beige;
+body{ /*whole body*/
+    background-color: #EFE9D5;
 }
-.Heading{
-    text-align: center;
-    font-size: large;
+#Heading{ /*main heading*/
+    text-align: left;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #27445D;
+    text-transform: uppercase;
+    margin-bottom: 00;
+} 
+#subHeading{ /*subHeading*/
+    margin-top: 5px;
+    font-size: small;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: dotted;
     text-transform: uppercase;
 }
+/*whole navigation bar*/
 .nav-bar ul {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +25,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #27445D;
   }
   
   .nav-bar li {
@@ -34,30 +43,48 @@ body{
   .nav-bar a:hover {
     background-color: #555;
   }
+
+/*Dark mode button*/
+.container {
+  position: relative;
+}
+button {
+  position: absolute;
+  right: 0;
+}
 #modeToggle{
   border: 2px solid black;
   border-radius: 90%;
 }
-.member{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
+/*Image*/
+.image{
+  height: 400px;
+  width: 100%;
+}
+/*Text*/
+#text{
+  font-size: 3rem;
+  text-align: justify;
   font-weight: bold;
 }
-#signupPara{
-  border: 2px solid black;
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
 }
-#roleMember{
-  border: 2px solid black;
+.listText{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: inherit;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
 }
-#loginPara{
-  border: 2px solid black;
-}
-.show-password {
-  cursor: pointer;
-  margin-left: 10px;
+/*Footer*/
+#foot{
+  background-color: #27445D;
 }

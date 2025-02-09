@@ -7,53 +7,40 @@
     <link rel = "stylesheet" href = "home.css">
 </head>
 <body>
-    <button id = "modeToggle">Mode</button>
+    <div class="container">
+        <button id = "modeToggle">Mode</button>
+    </div>
     <heading>
-        <h1 class = "Heading">Welcome to User Vault</h1>
-        <h2 class = "Heading">Your ultimate secured document vault</h2>
+        <h1 id = "Heading">User Vault</h1>
+        <h5 id = "subHeading">Your ultimate secured document vault</h5>
     </heading>
     <section><!--Navbar-->
         <nav class="nav-bar">
             <ul>
               <li><a href = "index.html" target = "_blank">Home</a></li>
               <li><a href = "about.html" target = "_blank">About</a></li>
-              <li><a href = "admin.html" target = "_blank">Admin</a></li>
-              <li><a href = "employee.html" target = "_blank">Employee</a></li>
-              <li><a href = "dashboard.html" target = "_blank">Dashboard</a></li>
+              <li><a href = "signIn.html" target = "_blank">Sign in</a></li>
+              <li><a href = "signUp.html" target = "_blank">Sign Up</a></li>
               <li><a href = "help.html" target = "_blank">Help</a></li>
             </ul>
           </nav>
-        <main  class = "member">
-            <p id="signupPara">   New Members sign up   </p>
-            <label for = "role" id="roleMember">Select role : </label>
-            <select name = "role" id = "role">
-                <option>Admin</option>
-                <option>Employee</option>
-            </select> <br><br>
-            <form>
-                <label for="Email">Email Address (valid) : </label> <!--email-->
-                <input type = "text" id = "EmailOld" placeholder = "Email" email = "EmailOld"><br><br><br>
-                <label for="Password">Password (valid) : </label> <!--password-->
-                <input type="password" id="password" placeholder="Password">
-                <span toggle="#password" class="show-password">Show</span>
-            </form><br><br> 
-            <button>Submit</button>
-            <p id="loginPara">Experienced Members login</p>
-            <form>
-                <label for="nameNew">Name (as per Aadhar Card) : </label>
-                <input type = "text" id = "nameNew" placeholder = "e.g John Doe" name = "nameNew"><br><br> <!--name-->
-                <label for="EmailNew">Email Address (valid) : </label>
-                <input type = "text" id = "EmailNew" placeholder = "e.g abc@gmail.com" EmailNew = "EmailNew"><br><br><!--email-->
-                <label for="passwordNew">Create Password : </label>
-                <input type = "password" id = "passwordNew" placeholder = "e.g abc@45#" passwordNew = "passwordNew"><br><br>
-                <label for="Aadhar">Enter Aadhar Number : </label>
-                <input type = "number" id = "Aadhar" placeholder = "e.g 5847 7788 ****" Aadhar = "Aadhar"><br><br>
-                <label for="Password">Enter Mobile Number :</label>
-                <input type = "number" id = "Mobile" placeholder = "e.g 9997778***" Mobile = "Mobile"><br><br>
-            </form>
-            <button>Submit</button>
+        <br><br>
+        <img src="locker3.webp" class="image">
+        <p id="text">What can you save here?<br>
+            <ul class="listText">
+                <li><a href="https://en.wikipedia.org/wiki/Office" target="_blank"class="listText">Office documents</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Home" target="_blank" class="listText">Home details</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Finance" target="_blank"class="listText">Financial details</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Password" target="_blank"class="listText">Personal passwords</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Education" target="_blank"class="listText">Educational documents</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Citizenship" target="_blank"class="listText">Citizenship Documents</a></li>
+            </ul>
+        </p>
         </main>
     </section>
+    <footer id="foot">
+        <p></p>
+    </footer>
     <script src = "script.js"></script>
 </body>
 </html>
