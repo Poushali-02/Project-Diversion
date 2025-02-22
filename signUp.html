@@ -11,17 +11,25 @@
   <h5 id = "subHeading">Your ultimate secured document vault</h5>
 </heading>
     <section><!--Navbar-->
-        <nav class="nav-bar">
-            <ul>
-              <li><a href = "index.html" target = "_blank">Home</a></li>
-              <li><a href = "about.html" target = "_blank">About</a></li>
-              <li><a href = "admin.html" target = "_blank">Admin</a></li>
-              <li><a href = "employee.html" target = "_blank">Employee</a></li>
-              <li><a href = "dashboard.html" target = "_blank">Dashboard</a></li>
-              <li><a href = "help.html" target = "_blank">Help</a></li>
-            </ul>
-          </nav>
-          
+      <nav class="nav-bar">
+          <ul>
+            <li><a href = "index.html" target = "_blank">Home</a></li>
+            <li><a href = "signIn.html" target = "_blank">Sign in</a></li>
+            <li><a href = "signUp.html" target = "_blank">Sign Up</a></li>
+            <li><a href = "help.html" target = "_blank">Help</a></li>
+          </ul>
+        </nav>
+        <div id="signUpBox">
+          <h3 id="welcomeMsg">Welcome to User Vault<br></h3>
+          <h1>Sign Up</h1>
+            <form action="/signUp-form" method="POST">
+              <label for="Name">Name : </label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <label for="Email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email Id" required>
+              <button type="submit">Sign Up</button>
+          </form>
+        </div>
     </section>
     
     <script src = "script.js"></script>

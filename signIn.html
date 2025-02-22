@@ -6,24 +6,33 @@
     <title>Sign in</title>
     <link rel = "stylesheet" href = "signIn.css">
 </head>
-<body><heading>
+<body>
+  <heading>
   <h1 id = "Heading">User Vault</h1>
   <h5 id = "subHeading">Your ultimate secured document vault</h5>
 </heading>
     <section><!--Navbar-->
-        <nav class="nav-bar">
-            <ul>
-              <li><a href = "index.html" target = "_blank">Home</a></li>
-              <li><a href = "about.html" target = "_blank">About</a></li>
-              <li><a href = "admin.html" target = "_blank">Admin</a></li>
-              <li><a href = "employee.html" target = "_blank">Employee</a></li>
-              <li><a href = "dashboard.html" target = "_blank">Dashboard</a></li>
-              <li><a href = "help.html" target = "_blank">Help</a></li>
-            </ul>
-          </nav>
-          
+      <nav class="nav-bar">
+          <ul>
+            <li><a href = "index.html" target = "_blank">Home</a></li>
+            <li><a href = "signIn.html" target = "_blank">Sign in</a></li>
+            <li><a href = "signUp.html" target = "_blank">Sign Up</a></li>
+            <li><a href = "help.html" target = "_blank">Help</a></li>
+          </ul>
+        </nav>
+    <div id="signInBox">
+      <h1>Sign In</h1>
+        <form action="/signIn-form" method="POST">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <button type="submit">Login</button>
+          <p>New to User Vault? <a href="signUp.html" target="_blank">create new account</a></p>
+      </form>
+    </div>
+      </div>
     </section>
-    
-    <script src = "script.js"></script>
+    <script src = "script.js"></script> 
 </body>
 </html>
